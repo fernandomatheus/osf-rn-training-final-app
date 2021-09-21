@@ -2,6 +2,10 @@ import axios from 'axios';
 
 const BASE_URL = 'https://osf-rn-training-bff.herokuapp.com';
 
+interface Trailer {
+  url: string;
+}
+
 export interface Movie {
   id: string;
   title: string;
@@ -9,6 +13,7 @@ export interface Movie {
   synopsis: string;
   posterPortraitUrl: string | null;
   posterHorizontalUrl: string | null;
+  trailers: Trailer[];
 }
 
 export const getMovies = () => {

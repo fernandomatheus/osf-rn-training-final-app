@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import FastImage from 'react-native-fast-image';
 import PortraitPlaceholder from '../../assets/movie_placeholder_portrait.png';
 
 type Props = {
@@ -12,10 +12,10 @@ const PosterPortrait = ({ imageURL, width, height }: Props) => {
   const imageSource = imageURL ? { uri: imageURL } : PortraitPlaceholder;
 
   return (
-    <Image
+    <FastImage
       source={imageSource}
       style={{ width, height }}
-      resizeMode="contain"
+      resizeMode={FastImage.resizeMode.contain}
     />
   );
 };

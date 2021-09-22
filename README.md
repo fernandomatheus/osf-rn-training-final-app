@@ -64,7 +64,7 @@ Na tela de **MovieDetail** será preciso listar as sessões disponíveis por dia
 
 ### 2. Adicionar o pacote [Lint-staged](https://github.com/okonet/lint-staged) para funcionar em conjunto com o [Husky](https://github.com/typicode/husky) ja configurado no projeto
 
-### 3. Adicionar suporte para mais cidades (Ainda não disponível)
+### 3. Adicionar suporte para mais cidades
 
   Para acessarem todas as cidades disponíveis suportadas pela api, será necessário fazer uma requisição `GET` para o endpoint:<br />
   `https://osf-rn-training-bff.herokuapp.com/cities`

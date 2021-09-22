@@ -70,9 +70,13 @@ Na tela de **MovieDetail** será preciso listar as sessões disponíveis por dia
   `https://osf-rn-training-bff.herokuapp.com/cities`
   <br />
   <br />
-  Será preciso adicionar na tela de home um componente que será possivel selecionar qual cidade o usuário quer vizualizar os filmes disponíveis. Para listar os filmes disponíveis por uma cidade, deverá ser feita uma requisição `GET` para o endpoint:<br />
+  Será preciso adicionar na tela de home um componente que será possivel selecionar qual cidade o usuário quer vizualizar os filmes disponíveis. <br /><br />
+  Para listar os filmes disponíveis por uma cidade, deverá ser feita uma requisição `GET` para o endpoint:<br />
   `https://osf-rn-training-bff.herokuapp.com/movies/city/{cityId}`<br />
   `cityId` será retornado no endpoint de `/cities` <br /><br />
+  
+  Para listar as sessões de um filme de uma cidade específica, basta fazer uma requisição `GET` para o endpoint:<br />
+  `https://osf-rn-training-bff.herokuapp.com/movies/{movieId}/sessions/date/{date}?cityId={cityId}`<br /><br />
   
   Requisitos de layout:
   Devera haver um ícone que abrirá a lista de cidades, onde mostrará apenas o nome da cidade e se ela foi selecionada
